@@ -8,8 +8,8 @@ spec:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: tf-jx-arriving-pipefish
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - davidmcnamee
+    environmentGitOwner: davidmcnamee
     gitKind: github
     gitName: github
     gitServer: https://github.com
