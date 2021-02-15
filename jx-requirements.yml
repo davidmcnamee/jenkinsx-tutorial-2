@@ -5,26 +5,37 @@ spec:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: tf-jx-arriving-pipefish
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "107796742612"
+    project: groupshot-301820
     provider: gke
     registry: gcr.io
+    zone: us-central1-a
   environments:
   - key: dev
+    owner: davidmcnamee
+    repository: jenkinsx-tutorial-2
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 35.239.108.100.nip.io
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: davids-jenkinsx-bot
   repository: nexus
   secretStorage: vault
   vault: {}
