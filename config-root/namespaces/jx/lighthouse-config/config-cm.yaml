@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - davidmcnamee/jenkinsx-tutorial-2
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.239.108.100.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
